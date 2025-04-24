@@ -4,7 +4,7 @@ import numpy as np
 
 class Model():
     def __init__(self):
-        self.model = torch.jit.load("./model/Blight_model_scripted.pt")
+        self.model = torch.jit.load("../model/Blight_model_scripted.pt")
         self.model.eval()
         self.transform = transforms.Compose([
             transforms.Resize((256,256)),
